@@ -12,4 +12,6 @@ class FlaskAppTests(unittest.TestCase):
         reponse = requests.post('http://localhost:5000', data='Hello, world!')
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.text, 'Request method: POST\nRequest data: Hello, world!')
-        
+
+if __name__ == '__main__':
+    unittest.main()
